@@ -1,0 +1,177 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+/* imports */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
+@import url(http://fonts.googleapis.com/css?family=Markazi+Text);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root{
+	--siam-green: rgb(111,230,159); 
+	--siam-gray: rgb(184,181,178);
+	--siam-light-gray: rgb(240,239,237);
+}
+
+.canvas {
+	display: grid;
+	grid-template-columns: 30vw 30vw 30vw;
+	grid-template-rows: 55vh auto auto 5vh;
+	width: 95vw;
+	height: 95vh;
+	padding-left: 5%;
+	padding-top: 5%;
+}
+
+h2 {
+	font-family: 'Roboto';
+	color: gray;
+	letter-spacing: 2.5px;
+}
+
+.header {
+	grid-column: 1/3;
+	font-family: 'Roboto';
+	line-height: 1.5;
+}
+
+.header-subtitle {
+	font-size: 14px;
+}
+
+.header h1 {
+	font-size: 64px;
+}
+
+.logo {
+	grid-column: 3/4;
+}
+
+.logo > img {
+	width: 400px;
+	height: 400px;
+}
+
+.intro {
+	align-self: end;
+	grid-column:1/3;
+	border-left: 3px solid black;
+	padding-left: 20px;
+}
+
+.intro h2 {
+	font-size: 36px;
+	line-height: 1.5;
+	letter-spacing: 3px;
+}
+
+.intro p {
+	margin-top: 10px;
+	line-height: 1;
+	font-family: 'Markazi Text';
+	font-size: 28px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	width: 90%;
+}
+
+.tiles {
+	grid-column: 1/3;
+	grid-row: 3/4;
+	padding-top: 50px;
+}
+
+.tile {
+    float:left;
+    position: relative;
+    width: 25%;
+    padding-bottom : 25%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color: rgb(111, 230, 159);
+    overflow:hidden;
+}
+.tile:hover {
+  opacity:0.8;
+  color:black;
+}
+
+.tile-first {
+  margin-left:0;
+}
+
+.tile-content {
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight:700;
+    font-size:32px;
+}
+
+.table{
+    display:table;
+    height:100%;
+    width:100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+    height:100%;
+    width:100%;
+}
+
+a:visited { text-decoration: none; color:white; }
+
+.footer {
+	grid-row: 4/5;
+	grid-column: 1/3;
+	align-self: end;
+	font-family: 'Roboto';
+	letter-spacing: 3px;
+	color: gray;
+}
