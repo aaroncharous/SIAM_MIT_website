@@ -54,6 +54,7 @@ table {
 #canvas {
   margin: 10%;
   background: rgb(252, 252, 252, 1.);
+  display: grid;
 }
 
 p {
@@ -100,8 +101,7 @@ p {
     width: 20%;
     padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
     margin:1.66%;
-    background-color: rgb(27, 167, 154, 0.85);
-    background-color: rgb(27, 173, 161, 0.85);
+    background-color: rgb(60, 216, 124, 0.85);
     overflow:hidden;
 }
 .tile:hover {
