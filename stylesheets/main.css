@@ -1,0 +1,148 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* imports */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+/* Custom CSS  */
+/* canvas */
+#canvas {
+  margin: 10%;
+  background: rgb(252, 252, 252, 1.);
+}
+
+p {
+  background: #bfbfbf;
+  color: black;
+  font-size: 16px;
+}
+
+#logo{
+  float: left;
+  width: 40%;
+  height: 100px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 72px;
+}
+#logo h3 {
+  font-variant: small-caps;
+  font-size: 24px;
+}
+
+#logo-subtitle h2 {
+  color: rgb(191, 191, 191, 1);
+  font-size: 16px;
+}
+
+.img_container {
+  float:right;
+  width:20%;
+  height:20%;
+}
+
+.img_container img {
+  width:100%;
+}
+
+/* tiles */
+.tiles {
+  padding-top: 60%;
+}
+
+.tile {
+    float:left;
+    position: relative;
+    width: 20%;
+    padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color: rgb(27, 167, 154, 0.85);
+    background-color: rgb(27, 173, 161, 0.85);
+    overflow:hidden;
+}
+.tile:hover {
+  opacity:0.9;
+}
+
+.tile-first {
+  margin-left:0;
+}
+
+.tile-content {
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    text-align: center;
+    font-family: 'Lato',verdana, sans-serif;
+    font-weight:700;
+    font-size:32px;
+}
+
+.table{
+    display:table;
+    height:100%;
+    width:100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+    height:100%;
+    width:100%;
+}
+
+a:visited { text-decoration: none; color:white; }
+
+/* footer style */
+.footer {
+  clear: both;
+  margin: 0;
+  color: rgb(191, 191, 191, 1);
+  font-size: 16px;
+}
+
+
