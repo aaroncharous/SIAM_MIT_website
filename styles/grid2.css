@@ -106,6 +106,8 @@ h2 {
 .intro-container {
 	border-left: 3px solid black;
 	padding-left: 30px;
+	animation-name:fadein;
+	animation-duration:6s;
 
 }
 
@@ -114,6 +116,12 @@ h2 {
 	line-height: 1.2;
 	/*letter-spacing: 3px;*/
 	color: black;
+}
+
+@keyframes fadein {
+	from {opacity:0;}
+	40% {opacity:0.8;}
+	100% {opacity:1;}
 }
 
 .intro p {
@@ -160,6 +168,7 @@ h2 {
 .intro-container span {
 	color: var(--siam-green);
 	border-bottom: 2px solid var(--siam-green);
+	font-weight: 600;
 }
 
 a:link { 
