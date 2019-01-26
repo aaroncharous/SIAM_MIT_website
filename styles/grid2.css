@@ -59,7 +59,7 @@ table {
 .canvas {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-template-rows: auto auto auto;
+	grid-template-rows: 40vh 60vh 100vh 10vh;
 	width: 90vw;
 	height: 90vh;
 	padding-left: 5%;
@@ -135,15 +135,9 @@ h2 {
 	font-weight: 300;
 }
 
-.learn-more {
-	padding-top: 20px;
-}
-
-#learn {
-	color:white;
-	background-color: var(--siam-green);
-	padding-left: 20px;
-	padding-right: 20px;
+#join-list:hover {
+	opacity: 0.8;
+	border-bottom: 2px solid var(--siam-green);
 }
 
 .tiles {
@@ -170,16 +164,67 @@ h2 {
 	font-weight: 600;
 }
 
-a:link { 
 
+a:link { 
 	text-decoration: none; 
 	color:black; 
 }
 
 a:visited { text-decoration: none; color:black; }
 
+#events {
+	font-family: 'Roboto';
+	font-size: 42px;
+	grid-row:3/4;
+	grid-column:1/4;
+	background: white;
+	letter-spacing: 2px;
+	padding-top: 2%;
+}
+
+#upcoming {
+	color: var(--siam-green);
+}
+
+.event-container {
+	padding-top: 3%;
+}
+.event-content {
+	border-left: 2px solid black;
+}
+
+.event-content * {
+	padding-bottom: 1%;
+	padding-left: 2%;
+	letter-spacing: 1px;	
+}
+
+.upcoming-event-content * {
+	padding-bottom: 1%;
+	padding-left: 2%;
+	letter-spacing: 1px;
+	border-left: 2px solid var(--siam-green);
+}
+
+.event-container h2 {
+	font-size: 32px;
+}
+
+.event-container h3 {
+	font-size: 24px;
+}
+
+.event-container h4 {
+	font-size: 16px;
+}
+
+.event-container p {
+	font-size: 16px;
+	padding-bottom: 0%;
+}
+
 .footer {
-	grid-row: 3/4;
+	grid-row: 4/5;
 	grid-column: 1/4;
 	align-self: end;
 	font-family: 'Roboto';
