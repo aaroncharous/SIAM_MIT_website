@@ -56,12 +56,18 @@ table {
 	--siam-light-gray: rgb(240,239,237);
 }
 
-.canvas {
+.first-page-spacer {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-template-rows: 40vh 60vh 100vh 10vh 60vh;
+	/*grid-template-rows: 40vh 60vh 100vh 60vh 60vh 1vh;*/
 	width: 90vw;
-	height: 90vh;
+	height: 100vh;
+
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5%;
+}
+.rest-of-page-container{
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 5%;
