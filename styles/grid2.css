@@ -251,7 +251,7 @@ a:visited { text-decoration: none; color:black; }
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
 	/*grid-template-rows: 25vw 0.5vw 2vw 25vw 0.5vw 2vw;*/
-	grid-gap: 5px;
+	grid-gap: 10px;
 	margin: 3%;
 	padding-left: 10%;
 	padding-top: 5%;
@@ -265,13 +265,13 @@ a:visited { text-decoration: none; color:black; }
 }
 
 .bio-name{
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 600;
 	letter-spacing: 2px;
 }
 
 .bio-title {
-	font-size: 20px;
+	font-size: 16px;
 	color: var(--siam-gray);
 	letter-spacing: 1px;
 }
