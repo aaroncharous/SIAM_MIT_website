@@ -249,9 +249,9 @@ a:visited { text-decoration: none; color:black; }
 
 .bio-grid {
 	display: grid;
-	grid-template-columns: 25% 25% 25%;
-	grid-template-rows: 20vw 0.5vw 2vw 20vw 0.5vw 2vw;
-	grid-gap: 15px;
+	grid-template-columns: 30% 30% 30%;
+	/*grid-template-rows: 25vw 0.5vw 2vw 25vw 0.5vw 2vw;*/
+	grid-gap: 5px;
 	margin: 3%;
 	padding-left: 10%;
 	padding-top: 5%;
