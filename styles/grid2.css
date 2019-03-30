@@ -62,7 +62,6 @@ table {
 	/*grid-template-rows: 40vh 60vh 100vh 60vh 60vh 1vh;*/
 	width: 90vw;
 	height: 100vh;
-
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 5%;
@@ -255,7 +254,6 @@ a:visited { text-decoration: none; color:black; }
 	margin: 3%;
 	padding-left: 10%;
 	padding-top: 5%;
-
 }
 
 .bio-img img {
@@ -276,6 +274,12 @@ a:visited { text-decoration: none; color:black; }
 	letter-spacing: 1px;
 }
 
+.who-we-are a:hover {
+	color: var(--siam-green);
+	border-bottom: 2px solid black;
+	border-color: var(--siam-green);
+}
+
 .footer {
 	grid-row: 5/6;
 	grid-column: 1/4;
@@ -283,4 +287,10 @@ a:visited { text-decoration: none; color:black; }
 	font-family: 'Roboto';
 	letter-spacing: 3px;
 	color: gray;
+	padding-top: 5%;
+}
+
+/* past officers page */
+.past-officers-spacing {
+	padding-bottom: 15%;
 }
